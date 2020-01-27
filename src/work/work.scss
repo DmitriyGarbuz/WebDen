@@ -1,0 +1,159 @@
+$Open: 'Open Sans', sans-serif;
+$Proxima: 'Proxima Nova', sans-serif;
+
+$colorBlue: #23b3fe;
+$colorGrey: #a1a7ac;
+$colorBack: #26292d;
+$colorCont: #24272b;
+
+.work-2 {
+    margin-top:-5rem;
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+        height: 13rem;
+    }
+        .col-2{
+            margin-top: 8rem;
+            .hedline{
+                color: white;
+                font-family: $Proxima;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 4rem;  
+            }
+            #hedline-two{
+                max-width: 6rem;
+                line-height: 2rem; 
+            }
+            .number{
+                color: $colorGrey;
+                font-family: $Open;
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+        .col-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .container-elipse {
+                margin-top: -2rem;
+                display: block;
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 0px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+              }
+              .container-elipse input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+              }
+              .checkmark-elipse {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: $colorGrey;
+                border-radius: 50%;
+    
+              }
+              .container-elipse:hover input ~ .checkmark-elipse {
+                background-color: #ccc;
+    
+              }
+              .container-elipse input:checked ~ .checkmark-elipse {
+                background-color: $colorGrey;
+    
+              }
+              .checkmark-elipse:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              .container-elipse input:checked ~ .checkmark-elipse:after {
+                display: block;
+              } 
+              .container-elipse .checkmark-elipse:after {
+                   top: 5px;
+                  left: 5px;
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  border: solid $colorBlue;
+                  background: #275770;
+              }
+        hr {
+            background-color: $colorGrey; 
+            color: $colorBlue; 
+            height: 2px; 
+            width: 13rem;
+            line-height: 4rem; 
+            margin-inline-start: 0rem;
+            margin-inline-end: 0rem;
+            margin-block-start: 0em;
+            margin-block-end: 0rem;
+            transform: rotate(90deg);
+        }
+        #last-line{
+            line-height: 1rem; 
+            margin-block-end: 5rem;
+            margin-top: -5rem;
+        }
+        #last-input{
+            margin-top: -3rem;
+        }
+        }
+        #col-sm-3{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: end;
+        }
+        #col-sm-5{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: end;
+        }
+        #work-back-image{
+            margin-top: -75rem;
+        }
+        @media screen and (max-width: 1600px) {
+            .col-2{
+                flex: 0 0 30.666667%;
+                max-width: 30.666667%;
+            }
+        }
+        @media screen and (max-width: 1002px) {
+            .col-2{
+                flex: 0 0 35.666667%;
+                max-width: 35.666667%;
+            }
+        }
+        @media screen and (max-width: 860px) {
+            .col-2{
+                flex: 0 0 43%;
+                max-width: 43%;
+            }
+        }
+        @media screen and (max-width: 705px) {
+            .col-2{
+            .hedline{
+                font-size: 1rem;
+                line-height: 4rem;  
+            }
+            .number{
+                font-size: 2rem;
+                line-height: 4rem;
+            }
+        }
+        }
+}

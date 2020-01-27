@@ -1,0 +1,35 @@
+$Open: 'Open Sans', sans-serif;
+$Proxima: 'Proxima Nova', sans-serif;
+
+$colorBlue: #23b3fe;
+$colorGrey: #a1a7ac;
+$colorBack: #26292d;
+$colorCont: #24272b;
+
+.portfolio {
+    h2{
+        margin-top: 5rem;
+        font-family:$Open;
+        color: white;
+    }
+    .nav-link{
+        color: $colorGrey;
+        &:hover{
+            color: white;
+        }
+    }
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 3rem;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .nav-link{
+            padding: .5rem .5rem;
+            font-size: 0.7rem;
+        }
+    }
+}

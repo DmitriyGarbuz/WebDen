@@ -1,0 +1,348 @@
+$Open: 'Open Sans', sans-serif;
+$Proxima: 'Proxima Nova', sans-serif;
+
+$colorBlue: #23b3fe;
+$colorGrey: #a1a7ac;
+$colorBack: #26292d;
+$colorCont: #24272b;
+
+.services {
+    background-color: $colorBack;
+    background-image: url(../img/Back-services.png);
+    background-size: 100% 100%;
+    h2{
+        margin-top: 5rem;
+        font-family:$Open;
+        color: white;
+    }
+    .container {
+        margin-top: 3rem;
+        .col-6{
+            height: 4rem;
+            display: flex;
+            align-items: flex-end;
+            i {
+                color: $colorGrey;
+                line-height: 1rem;  
+            }
+            p {
+             margin-left: 1rem;
+              color: white;
+              font-family: $Proxima;
+              font-size: 1.5rem;
+              font-weight: 800;
+              line-height: 1rem;  
+            }
+        }
+    }
+    #services-row{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #services-01{
+        background: url(../img/One.png) no-repeat;
+    }
+    #services-02{
+        background: url(../img/Two.png) no-repeat;
+    }
+    #seo {
+       background-color: $colorCont;
+       border-radius: 5px;
+       padding-right: 0px;
+       padding-left: 0px;
+       margin-right: 0px;
+       margin-left: 0px;
+       .row{
+           margin-top: 1rem;
+       }
+       #seo-row {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        align-items: flex-end;
+        .row{
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-left: 1rem;
+            height: 4rem;
+            background: url(../img/Tree.png) no-repeat;
+            display: flex;
+            align-items: flex-end;
+            i {
+                color: $colorBlue;
+                line-height: 1rem;
+                margin-bottom: 1rem;
+            }
+            p {
+            margin-top: 0px;
+             margin-left: 1rem;
+              color: $colorBlue;
+              font-family: $Proxima;
+              font-size: 1.5rem;
+              font-weight: 800; 
+              line-height: 1rem;  
+            }
+        }
+        button {
+            width: 176px;
+            height: 50px;
+            padding-top: .5rem;
+            padding-right: 1rem;
+            padding-bottom: .5rem;
+            padding-left: 1rem;
+            border-radius: 29px;
+            font-family:$Open;
+            color: $colorBlue;
+        }
+    }
+    #seo-row2{
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        .col-sm {
+       p{
+        color: $colorGrey;
+        font-family: $Open;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        }
+        .seo-hedline {
+            color: white;
+            font-weight: 800;
+        }
+      }
+     }
+    }
+    
+.work {
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .col-2{
+        margin-top: 3rem;
+        .hedline{
+            color: white;
+            font-family: $Proxima;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 4rem;  
+        }
+        hr{
+            background-color: $colorBlue; 
+            color: $colorBlue; 
+            height: 1px; 
+            width: 4rem;
+            line-height: 4rem; 
+            margin-inline-start: 2rem;
+            margin-inline-end: 2rem;
+            margin-block-start: 2rem;
+            margin-block-end: 2rem;
+        }
+        .number{
+            color: $colorBlue;
+            font-family: $Open;
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        p{
+            color: $colorGrey;
+            font-family: $Open;
+            font-size: 0.8rem;
+            line-height: 1.2rem; 
+        }
+    }
+    .col-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container-elipse {
+            display: block;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          .container-elipse input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+          .checkmark-elipse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #275770;
+            border-radius: 50%;
+
+          }
+          .container-elipse:hover input ~ .checkmark-elipse {
+            background-color: #ccc;
+
+          }
+          .container-elipse input:checked ~ .checkmark-elipse {
+            background-color: #275770;
+
+          }
+          .checkmark-elipse:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          .container-elipse input:checked ~ .checkmark-elipse:after {
+            display: block;
+          } 
+          .container-elipse .checkmark-elipse:after {
+               top: 5px;
+              left: 5px;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              border: solid #28aff0;
+              background: #28aff0;
+          }
+    hr {
+        background-color: $colorBlue; 
+        color: $colorBlue; 
+        height: 2px; 
+        width: 9em;
+        line-height: 4rem; 
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
+        margin-block-start: 3em;
+        margin-block-end: 0rem;
+        transform: rotate(90deg);
+    }
+    }
+}
+@media screen and (max-width: 1600px) {
+    .col-2{
+        flex: 0 0 30.666667%;
+        max-width: 30.666667%;
+    }
+}
+@media screen and (max-width: 1026px) {
+    .work .col-2 hr {
+        background-color: #23b3fe;
+        color: #23b3fe;
+        height: 1px;
+        width: 4rem;
+        line-height: 4rem;
+        margin-inline-start: 2rem;
+        margin-inline-end: 2rem;
+        margin-block-start: 2rem;
+        margin-block-end: 2rem;
+    }
+}
+@media screen and (max-width: 1002px) {
+    .col-2{
+        flex: 0 0 35.666667%;
+        max-width: 35.666667%;
+    }
+}
+@media screen and (max-width: 860px) {
+    .col-2{
+        flex: 0 0 43%;
+        max-width: 43%;
+    }
+}
+@media screen and (max-width: 759px) {
+    .work{
+    .col-2{
+        .row{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .hedline{
+            font-size: 1rem;
+            line-height: 4rem;  
+        }
+        hr{
+            height: 1px; 
+            width: 2rem;
+            line-height: 4rem; 
+            margin-inline-start: .5rem;
+            margin-inline-end: .5rem;
+            margin-block-start: 2rem;
+            margin-block-end: 2rem;
+        }
+        .number{
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+        p{
+            color: $colorGrey;
+            font-family: $Open;
+            font-size: 0.5rem;
+            line-height: 1rem; 
+        }
+      }
+     }
+    .container .col-6 .row{
+        margin-right: 0px;
+        margin-left: 0px;
+     } 
+     .container .col-6 p {
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+    .container .col-6 i {
+        color: #a1a7ac;
+        line-height: 1rem;
+    }
+#services-01{
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+#services-02{
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+   }
+   @media screen and (max-width: 450px) {
+#servies-row{
+    display: flex;
+    flex-direction: column;
+}
+#services-01{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#services-02{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#seo #seo-row .row p {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+.work .col-2 .hedline {
+    font-size: .8rem;
+    line-height: 4rem;
+}
+.work .col-2 hr {
+    height: 1px;
+    width: 1rem;
+    line-height: 4rem;
+    margin-inline-start: .2rem;
+    margin-inline-end: .2rem;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+.work .col-2 .number {
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+   }
+}

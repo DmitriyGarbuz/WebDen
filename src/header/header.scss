@@ -1,0 +1,146 @@
+$Open: 'Open Sans', sans-serif;
+
+$colorBlue: #23b3fe;
+$colorGrey: #a1a7ac;
+$colorBack: #26292d;
+
+body{
+ background-color: $colorBack;
+}
+.header{
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    background-image: url(../img/Back-header.jpg);
+    background-size: 100% 100%;
+    height: 38rem;
+
+.col-2 {
+    margin-top: 2%;
+    .nav-link{
+        color:$colorGrey;
+        text-transform: uppercase;
+        &:hover{
+            color: white;
+        }
+    }
+    #heder-ru{
+        color:white;
+        font-weight: 700;
+    }
+    .fas {
+        color: white;
+        &:hover{
+            color: #96999b;
+        }
+    }
+}
+.text-center{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+h1{
+    margin-top: 5rem;
+    max-width: 40rem;
+    font-family:$Open;
+    color: white;
+    b {
+        color: $colorBlue;
+    }
+}
+}
+.input-group {
+    width: 30rem;
+.form-control {
+    background-color: rgba(68, 67, 67, 0.301);
+    color: rgb(253, 253, 253);
+    border: 1px solid #495057;
+}
+}
+.fas fa-search{
+    color: white;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: $colorBlue;
+        border-color: #007bff;
+    }
+    .btn-lg {
+        width: 305px;
+        padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+        border-radius: 29px;
+        font-family:$Open;
+    }
+    #bottom-p {
+margin-top: 8rem;
+        p {
+            color: $colorGrey;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        #bottom-p {
+            margin-top: 9rem;
+        }
+    }
+    @media screen and (max-width: 1035px) {
+.col-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.col-2{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+    }
+    @media screen and (max-width: 855px) {
+        .header{
+            background-image: url(../img/Back-header-table.jpg);
+            background-size: 100% 100%;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        .col-2{
+            flex: 0 0 20.666667%;
+            max-width: 20.666667%;
+        }
+            }
+ @media screen and (max-width: 700px) {
+     #mob-row{
+         float: right;
+     }
+    .col-2{
+        flex: 0 0 30.666667%;
+        max-width: 30.666667%;
+    }
+        }
+ @media screen and (max-width: 460px) {
+    .header{
+        background-image: url(../img/Back-header-mob.jpg);
+        background-size: 100% 100%;
+    }
+    h1{
+        
+        font-size: 1.5rem;
+    }
+     .col-4{
+         display: none;
+     }
+    .col-2{
+        flex: 0 0 50%;
+        max-width: 50%;
+        img {
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .nav-link{
+            padding: .5rem .5rem;
+        }
+    }
+        }
+}
